@@ -15,10 +15,13 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I'm a passionate Data Analyst and ML Engineer with a strong foundation in statistics, programming, and business acumen. I specialize in extracting meaningful insights from complex datasets and building predictive models that drive business decisions.
+              Meet me, a patient and attentive individual with a sharp ear for listening.
             </p>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              My approach combines rigorous statistical analysis with modern ML techniques to solve real-world problems. I'm constantly learning and exploring new technologies to stay at the forefront of data science.
+              As a dedicated listener, I believe that understanding is the key to impactful solutions. I'm not just a coder; I'm a night owl who stays burning the midnight oil until the code is done. The thrill of discovering patterns and transforming data into meaningful stories keeps me driven and engaged in every project I undertake.
+              However, my journey is not without its quirks; I'm an unapologetic overthinker. Yes, it does add a touch of complexity to my life, but that's the exact trait that pushes me to constantly question and seek out the extraordinary in the ordinary.
+              Beyond the code and quirks, my academic background has given me a solid foundation in the fields of programming, data analysis, and machine learning. As I take on new challenges and opportunities, I look forward to blending my technical and soft skills to create real-world solutions.
+              Join me on this exciting journey, where every challenge is an opportunity in disguise!
             </p>
             <div className="flex flex-wrap gap-2">
               {['Problem Solving', 'Data Visualization', 'Statistical Analysis', 'Team Collaboration'].map(
