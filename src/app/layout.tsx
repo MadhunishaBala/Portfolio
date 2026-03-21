@@ -2,13 +2,13 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Madhunisha Bala - Data Analyst & ML Engineer',
+  title: 'Madhunisha Balajeyandhan - Undergraduate in BSc(Hons) Artificial Intelligence and Data Science',
   description: 'Portfolio showcasing projects, work experience, and expertise in data analysis and machine learning',
   openGraph: {
     type: 'website',
     url: 'https://yourportfolio.com',
     title: 'Madhunisha Bala - Portfolio',
-    description: 'Data Analyst & ML Engineer',
+    description: ' Undergraduate in BSc(Hons) Artificial Intelligence and Data Science',
   },
 }
 
