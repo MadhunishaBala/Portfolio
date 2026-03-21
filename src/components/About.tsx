@@ -1,9 +1,10 @@
 export default function About() {
-  const skills = {
-    'Data Analysis': ['Python', 'SQL', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
-    'Machine Learning': ['Scikit-learn', 'TensorFlow', 'Keras', 'XGBoost', 'NLP'],
-    'Tools & Platforms': ['Jupyter', 'Tableau', 'Power BI', 'AWS', 'Git', 'Docker'],
-  }
+const skills = {
+  'Data Analysis': ['Python', 'SQL', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
+  'Machine Learning': ['Scikit-learn', 'TensorFlow', 'Keras'],
+  'Business Analysis': ['Requirements Gathering', 'Stakeholder Communication','User Stories','Process Mapping'],
+  'Tools & Platforms': ['Visual Studio Code', 'Git', 'Power BI', 'JIRA']
+};
 
   return (
     <section id="about" className="bg-secondary">
@@ -19,8 +20,12 @@ export default function About() {
             </p>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
               As a dedicated listener, I believe that understanding is the key to impactful solutions. I'm not just a coder; I'm a night owl who stays burning the midnight oil until the code is done. The thrill of discovering patterns and transforming data into meaningful stories keeps me driven and engaged in every project I undertake.
+           </p>
+           <p className="text-lg text-gray-300 mb-6 leading-relaxed">
               However, my journey is not without its quirks; I'm an unapologetic overthinker. Yes, it does add a touch of complexity to my life, but that's the exact trait that pushes me to constantly question and seek out the extraordinary in the ordinary.
-              Beyond the code and quirks, my academic background has given me a solid foundation in the fields of programming, data analysis, and machine learning. As I take on new challenges and opportunities, I look forward to blending my technical and soft skills to create real-world solutions.
+           </p>
+          <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+             Beyond the code and quirks, my academic background has given me a solid foundation in the fields of programming, data analysis, and machine learning. As I take on new challenges and opportunities, I look forward to blending my technical and soft skills to create real-world solutions.
               Join me on this exciting journey, where every challenge is an opportunity in disguise!
             </p>
             <div className="flex flex-wrap gap-2">
@@ -40,20 +45,12 @@ export default function About() {
           <div>
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-primary p-6 rounded-lg text-center">
-                <p className="text-3xl font-bold text-accent mb-2">50+</p>
+                <p className="text-3xl font-bold text-accent mb-2">15+</p>
                 <p className="text-gray-300">Projects Completed</p>
               </div>
               <div className="bg-primary p-6 rounded-lg text-center">
-                <p className="text-3xl font-bold text-accent mb-2">5+</p>
-                <p className="text-gray-300">Years Experience</p>
-              </div>
-              <div className="bg-primary p-6 rounded-lg text-center">
-                <p className="text-3xl font-bold text-accent mb-2">100M+</p>
-                <p className="text-gray-300">Records Analyzed</p>
-              </div>
-              <div className="bg-primary p-6 rounded-lg text-center">
-                <p className="text-3xl font-bold text-accent mb-2">15+</p>
-                <p className="text-gray-300">ML Models Built</p>
+                <p className="text-3xl font-bold text-accent mb-2">1+</p>
+                <p className="text-gray-300">Years of Work Experience</p>
               </div>
             </div>
           </div>
