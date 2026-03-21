@@ -1,27 +1,17 @@
 export default function Experience() {
   const experiences = [
-    {
-      title: 'Senior Data Analyst',
-      company: 'Tech Company',
-      period: '2023 - Present',
-      description: 'Leading data analysis initiatives, building dashboards, and creating ML models for predictive analytics.',
-      highlights: ['Led team of 3 analysts', 'Reduced query time by 60%', 'Implemented ML pipeline'],
-    },
-    {
-      title: 'Data Analyst',
-      company: 'Digital Agency',
-      period: '2021 - 2023',
-      description: 'Analyzed customer behavior, created visualizations, and provided data-driven recommendations.',
-      highlights: ['Processed 50M+ records', 'Built 5+ dashboards', 'Improved reporting efficiency by 40%'],
-    },
-    {
-      title: 'Junior Data Analyst',
-      company: 'Startup',
-      period: '2020 - 2021',
-      description: 'Started career in data analysis, learning SQL, Python, and data visualization.',
-      highlights: ['Learned core data skills', 'Built first ML models', 'Contributed to product analytics'],
-    },
-  ]
+  {
+    title: 'Intern Business Analyst',
+    company: 'Fcode Labs',
+    period: '2024 - 2025',
+    description: 'Assisted in gathering and documenting requirements, collaborated with stakeholders, supported user story creation, and contributed to UAT and coordination of tasks in an Agile team.',
+    highlights: [
+      'Contributed to Agile sprint activities',
+      'Supported testing and UAT processes',
+      'Translated requirements into clear user stories'
+    ],
+  }
+]
 
   return (
     <section id="experience" className="bg-primary">
