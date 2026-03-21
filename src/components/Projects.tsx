@@ -126,8 +126,7 @@ export default function Projects() {
                 </Link>
               ))}
             </div>
-          ) : (
-          )}
+          ) : null} 
         </div>
       </div>
     </section>
