@@ -127,7 +127,6 @@ export default function Projects() {
               ))}
             </div>
           ) : (
-            <p className="text-center text-gray-400">No projects found</p>
           )}
         </div>
       </div>
