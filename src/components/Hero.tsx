@@ -4,14 +4,14 @@ export default function Hero() {
       <div className="container fade-in">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span className="text-accent">Madhunisha Bala</span>
+            Hi, I'm <span className="text-accent">Madhunisha Balajeyandhan</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-6">
-            Data Analyst & ML Engineer
+            Undergraduate
           </p>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
             Transforming data into insights. Building intelligent solutions with Python, SQL, and Machine Learning.
-            Passionate about solving complex problems and creating data-driven products.
+            Passionate about solving complex problems and creating data driven products.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
