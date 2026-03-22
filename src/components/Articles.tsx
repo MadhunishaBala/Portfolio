@@ -18,7 +18,7 @@ export default function Articles() {
     const fetchArticles = async () => {
       try {
         // Replace with your Medium username
-        const mediumUsername = 'your-medium-username'
+        const mediumUsername = '@Nisha_Bala'
         const response = await fetch(
           `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUsername}`
         )
@@ -42,22 +42,22 @@ export default function Articles() {
         // Fallback articles
         setArticles([
           {
-            title: 'Getting Started with Machine Learning',
-            link: 'https://medium.com/@yourname/ml-guide',
-            pubDate: 'March 15, 2026',
-            content: 'A comprehensive guide to understanding machine learning fundamentals...',
+            title: 'Exploring Late Fusion',
+            link: 'https://medium.com/@Nisha_Bala/irp-series-part-04-exploring-late-fusion-487d0547df22',
+            pubDate: 'Sep 21, 2025',
+            content: 'A comprehensive guide to understanding Late Fusion Mechansim',
           },
           {
-            title: 'Data Analysis Best Practices',
-            link: 'https://medium.com/@yourname/data-best-practices',
-            pubDate: 'March 10, 2026',
-            content: 'Learn the best practices for analyzing and visualizing data...',
+            title: 'Basics of Multimodal Fusion Networks',
+            link: 'https://medium.com/@Nisha_Bala/fyp-series-part-01-basics-of-multimodal-fusion-network-78b0f39a3fab',
+            pubDate: 'August 20, 2025',
+            content: 'A guide to the fundamentals of multimodal fusion networks',
           },
           {
-            title: 'Building Production ML Models',
-            link: 'https://medium.com/@yourname/production-ml',
-            pubDate: 'March 5, 2026',
-            content: 'Techniques and tools for deploying machine learning models...',
+            title: 'Walk through into Convolutional Neural Network',
+            link: 'https://medium.com/@Nisha_Bala/walkthrough-into-convolutional-neural-network-e46df19a4602',
+            pubDate: 'April 14, 2024',
+            content: 'A concise walkthrough of Convolutional Neural Networks (CNNs), explained through a practical example ',
           },
         ])
       } finally {
