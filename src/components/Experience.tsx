@@ -3,7 +3,7 @@ export default function Experience() {
   {
     title: 'Intern Business Analyst',
     company: 'Fcode Labs',
-    period: '2024 - 2025',
+    period: 'June 2024 - June 2025',
     description: 'Assisted in gathering and documenting requirements, collaborated with stakeholders, supported user story creation, and contributed to UAT and coordination of tasks in an Agile team.',
     highlights: [
       'Contributed to Agile sprint activities',
