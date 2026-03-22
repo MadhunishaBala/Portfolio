@@ -8,7 +8,7 @@ export default function Footer() {
             <a href="https://github.com/MadhunishaBala" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
               GitHub
             </a>
-            <a href="www.linkedin.com/in/madhunisha-balajeyandhan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
+            <a href="https://www.linkedin.com/in/madhunisha-balajeyandhan/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
               LinkedIn
             </a>
             <a href="https://medium.com/@Nisha_Bala" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
