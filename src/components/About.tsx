@@ -3,7 +3,7 @@ const skills = {
   'Data Analysis': ['Python', 'SQL', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
   'Machine Learning': ['Scikit-learn', 'TensorFlow', 'Keras'],
   'Business Analysis': ['Requirements Gathering', 'Stakeholder Communication','User Stories','Process Mapping'],
-  'Tools & Platforms': ['Visual Studio Code', 'Git', 'Power BI', 'JIRA']
+  'Tools & Platforms': ['Visual Studio Code', 'Git', 'Power BI', 'JIRA', 'Confluence']
 };
 
   return (
@@ -29,7 +29,7 @@ const skills = {
               Join me on this exciting journey, where every challenge is an opportunity in disguise!
             </p>
             <div className="flex flex-wrap gap-2">
-              {['Problem Solving', 'Data Visualization', 'Statistical Analysis', 'Team Collaboration'].map(
+              {['Problem Solving', 'Data Visualization', 'Statistical Analysis', 'Team Collaboration', 'Active Listening'].map(
                 (trait) => (
                   <span
                     key={trait}
@@ -50,7 +50,11 @@ const skills = {
               </div>
               <div className="bg-primary p-6 rounded-lg text-center">
                 <p className="text-3xl font-bold text-accent mb-2">1+</p>
-                <p className="text-gray-300">Years of Work Experience</p>
+                <p className="text-gray-300">Years of Experience</p>
+              </div>
+              <div className="bg-primary p-6 rounded-lg text-center">
+                <p className="text-3xl font-bold text-accent mb-2">10+</p>
+                <p className="text-gray-300">Team Collaborations</p>
               </div>
             </div>
           </div>
