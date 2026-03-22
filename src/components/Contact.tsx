@@ -59,8 +59,8 @@ export default function Contact() {
                 <span className="text-2xl text-accent">✉️</span>
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <a href="mailto:your.email@example.com" className="text-white hover:text-accent transition-colors">
-                    your.email@example.com
+                  <a href="mailto:madhuni@gmail.com" className="text-white hover:text-accent transition-colors">
+                    madhuni@gmail.com
                   </a>
                 </div>
               </div>
@@ -70,12 +70,12 @@ export default function Contact() {
                 <div>
                   <p className="text-gray-400 text-sm">LinkedIn</p>
                   <a
-                    href="https://linkedin.com/in/yourprofile"
+                    href="https://www.linkedin.com/in/madhunisha-balajeyandhan/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-accent transition-colors"
                   >
-                    linkedin.com/in/yourprofile
+                   linkedin.com/in/madhunisha-balajeyandhan/
                   </a>
                 </div>
               </div>
@@ -100,12 +100,12 @@ export default function Contact() {
                 <div>
                   <p className="text-gray-400 text-sm">Medium</p>
                   <a
-                    href="https://medium.com/@yourname"
+                    href="https://medium.com/@Nisha_Bala"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-accent transition-colors"
                   >
-                    medium.com/@yourname
+                    medium.com/@Nisha_Bala
                   </a>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full bg-secondary border border-gray--600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-accent transition-colors"
-                placeholder="john@example.com"
+                placeholder="nisha@example.com"
               />
             </div>
 
