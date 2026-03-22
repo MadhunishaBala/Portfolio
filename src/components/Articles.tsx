@@ -25,7 +25,7 @@ export default function Articles() {
         const data = await response.json()
 
         if (data.items) {
-          const recent = data.items.slice(0, 5).map((item: any) => ({
+          const recent = data.items.slice(0, 4).map((item: any) => ({
             title: item.title,
             link: item.link,
             pubDate: new Date(item.pubDate).toLocaleDateString('en-US', {
