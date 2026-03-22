@@ -54,9 +54,22 @@ export default function Projects() {
       language: 'Python, NLP, Transformers',
     },
     {
+      name: 'Optimizing Bus Schedules Using EA',
+      description: 'An intelligent framework that integrates Machine Learning with NSGA-II to optimize Delhi bus schedules, balancing punctuality, reliability, and operational feasibility through Pareto-optimal solutions.',
+      url: 'https://github.com/MadhunishaBala/Optimizing-Public-Bus-Schedules-Using-Multi-Objective-Evolutionary-Algorithms-and-Machine-Learning',
+      language: 'Python, NSGA-II'
+    },
+    {
+      name: 'Personality Classification: Introvert vs Extrovert',
+      description: 'Developed ML models to classify personality (Introvert vs. Extrovert) using behavioral features.',
+      url: 'https://github.com/MadhunishaBala/Social-Behaviour-Personality',
+      language: 'Python, Pandas, scikit-learn, matplotlib',
+    },
+    
+    {
       name: 'Formaldehyde Monitoring in Sri Lanka',
       description: 'Dashboard performing analysis of HCHO concentration over 7 cities in SL with data visualization and statistical insights.',
-      url: 'https://github.com/MadhunishaBala/Formaldehyde-Monitoring',
+      url: 'https://github.com/MadhunishaBala/Formaldehyde-HCHO-Monitoring-in-Sri-Lanka-',
       language: 'Python, Pandas, PowerBI',
     },
   ]
