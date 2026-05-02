@@ -130,20 +130,12 @@ export default function Projects() {
       categories: ['Optimization'],
     },
   ]
-
-  // Filter projects based on active filters
+  
   const filteredProjects = activeFilters.length === 0 
-    ? featured 
-    : featured.filter(project => 
-      {project.categories.map(cat => (
-      <span
-      key={cat}
-      className={`text-xs text-white px-2 py-1 rounded-full font-semibold ${CATEGORY_COLORS[cat]}`}
-      >
-        {cat}
-        </span>
-        ))
-      }
+  ? featured 
+  : featured.filter(project => 
+      project.categories.some(cat => activeFilters.includes(cat))
+    )
 
   // Calculate category counts
   const categoryCounts = CATEGORIES.map(cat => ({
