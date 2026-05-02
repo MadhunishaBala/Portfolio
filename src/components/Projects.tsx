@@ -21,11 +21,11 @@ interface FeaturedProject {
 const CATEGORIES = ['Computer Vision','Data Analytics', 'Machine Learning','NLP','Optimization']
 
 const CATEGORY_COLORS: { [key: string]: string } = {
-  'Computer Vision': 'bg-blue-500',
-  'Data Analytics': 'bg-yellow-500',
-  'Machine Learning': 'bg-green-500',
-  'NLP': 'bg-purple-500',
-  'Optimization': 'bg-orange-500',
+  'Computer Vision': 'bg-blue-500/20 text-blue-300',
+  'Data Analytics':  'bg-yellow-500/20 text-yellow-300',
+  'Machine Learning':'bg-green-500/20 text-green-300',
+  'NLP':             'bg-purple-500/20 text-purple-300',
+  'Optimization':    'bg-orange-500/20 text-orange-300',
 }
 
 export default function Projects() {
@@ -65,7 +65,7 @@ export default function Projects() {
       name: 'Non-Invasive Iron Deficiency Anaemia Prediction',
       description: 'Built an attention-based multimodal fusion model for hemoglobin regression and anemia classification using palm, nail, and metadata inputs.',
       url: 'https://github.com/MadhunishaBala/Non-Invasive-Iron-Deficiency-Anaemia-Prediction-using-Multimodal-Fusion',
-      language: 'Python, TensorFlow, OpenCV, Self-Attention,Multimodal Fusion',
+      language: 'Python,CNN, Attention Based Fusion',
       categories: ['Computer Vision']
     },
 
@@ -73,7 +73,7 @@ export default function Projects() {
       name: 'Multimodal Fruit Ripeness Detection System',
       description:'Built a ripeness detection system for banana, mango and papaya using CNN-based models',
       url:'https://github.com/vgry5/Multi-modal-Fruit-Ripeness-Detection-System',
-      language:'Python, TensorFlow, OpenCV, ResNet50, CNN, Numpy, Matplotlib',
+      language:'Python, TensorFlow, OpenCV, ResNet50',
       categories:['Computer Vision']
     },
 
@@ -107,7 +107,7 @@ export default function Projects() {
       name: 'Census Income Classification',
       description: 'Machine learning classification model to predict income levels (>50K vs ≤50K) using census data. Implements Naive Bayes and Random Forest with complete data preprocessing, feature engineering, and model evaluation.',
       url: 'https://github.com/MadhunishaBala/Census_Income_Classification',
-      language: 'Python, scikit-learn, Pandas',
+      language: 'Python, scikit-learn, Pandas, seaborn',
       categories: ['Machine Learning'],
     },
 
@@ -205,7 +205,7 @@ export default function Projects() {
                 {project.categories.map(cat => (
                   <span
                     key={cat}
-                    className="text-xs bg-accent bg-opacity-20 text-accent px-2 py-1 rounded-full font-semibold"
+                    className={`text-xs px-2 py-1 rounded-full font-semibold ${CATEGORY_COLORS[cat]}`}
                   >
                     {cat}
                   </span>
