@@ -18,7 +18,15 @@ interface FeaturedProject {
   categories: string[]
 }
 
-const CATEGORIES = ['Computer Vision', 'NLP', 'Machine Learning', 'Optimization']
+const CATEGORIES = ['Computer Vision','Data Analytics', 'Machine Learning','NLP','Optimization']
+
+const CATEGORY_COLORS: { [key: string]: string } = {
+  'Computer Vision': 'bg-blue-500',
+  'Data Analytics': 'bg-yellow-500',
+  'Machine Learning': 'bg-green-500',
+  'NLP': 'bg-purple-500',
+  'Optimization': 'bg-orange-500',
+}
 
 export default function Projects() {
   const [repos, setRepos] = useState<Repository[]>([])
@@ -52,27 +60,41 @@ export default function Projects() {
   }, [])
 
   const featured: FeaturedProject[] = [
+     /* Computer Vision */
     {
       name: 'Non-Invasive Iron Deficiency Anaemia Prediction',
       description: 'Built an attention-based multimodal fusion model for hemoglobin regression and anemia classification using palm, nail, and metadata inputs.',
       url: 'https://github.com/MadhunishaBala/Non-Invasive-Iron-Deficiency-Anaemia-Prediction-using-Multimodal-Fusion',
-      language: 'Python, TensorFlow, OpenCV',
-      categories: ['Computer Vision'],
+      language: 'Python, TensorFlow, OpenCV, Self-Attention,Multimodal Fusion',
+      categories: ['Computer Vision']
     },
+
     {
-      name: 'Reddit Analytical System',
-      description: 'End-to-end NLP system on Reddit data for text classification, sentiment analysis, and topic modeling using ML and transformer models.',
-      url: 'https://github.com/MadhunishaBala/Reddit-Analytical-System',
-      language: 'Python, NLP, Transformers',
-      categories: ['NLP'],
+      name: 'Multimodal Fruit Ripeness Detection System',
+      description:'Built a ripeness detection system for banana, mango and papaya using CNN-based models',
+      url:'https://github.com/vgry5/Multi-modal-Fruit-Ripeness-Detection-System',
+      language:'Python, TensorFlow, OpenCV, ResNet50, CNN, Numpy, Matplotlib',
+      categories:['Computer Vision']
     },
+
+     /* Data Analytics */
     {
-      name: 'Optimizing Bus Schedules Using EA',
-      description: 'An intelligent framework that integrates Machine Learning with NSGA-II to optimize Delhi bus schedules, balancing punctuality, reliability, and operational feasibility through Pareto-optimal solutions.',
-      url: 'https://github.com/MadhunishaBala/Optimizing-Public-Bus-Schedules-Using-Multi-Objective-Evolutionary-Algorithms-and-Machine-Learning',
-      language: 'Python, NSGA-II',
-      categories: ['Optimization'],
+      name: 'HR Analytics',
+      description: 'Dashboard and analysis of HR metrics including attendance patterns and employee insights using data visualization.',
+      url: 'https://github.com/MadhunishaBala/HR-Analytics',
+      language: 'Excel, PowerBI',
+      categories: ['Data Analytics'],
+
     },
+   {
+      name: 'Formaldehyde Monitoring in Sri Lanka',
+      description: 'Dashboard performing analysis of HCHO concentration over 7 cities in SL with data visualization and statistical insights.',
+      url: 'https://github.com/MadhunishaBala/Formaldehyde-HCHO-Monitoring-in-Sri-Lanka-',
+      language: 'Python, Pandas, PowerBI',
+      categories: ['Data Analytics'],
+    },
+
+     /* Machine Learning */
     {
       name: 'Personality Classification: Introvert vs Extrovert',
       description: 'Developed ML models to classify personality (Introvert vs. Extrovert) using behavioral features.',
@@ -80,12 +102,32 @@ export default function Projects() {
       language: 'Python, Pandas, scikit-learn, matplotlib',
       categories: ['Machine Learning'],
     },
+
     {
-      name: 'Formaldehyde Monitoring in Sri Lanka',
-      description: 'Dashboard performing analysis of HCHO concentration over 7 cities in SL with data visualization and statistical insights.',
-      url: 'https://github.com/MadhunishaBala/Formaldehyde-HCHO-Monitoring-in-Sri-Lanka-',
-      language: 'Python, Pandas, PowerBI',
+      name: 'Census Income Classification',
+      description: 'Machine learning classification model to predict income levels (>50K vs ≤50K) using census data. Implements Naive Bayes and Random Forest with complete data preprocessing, feature engineering, and model evaluation.',
+      url: 'https://github.com/MadhunishaBala/Census_Income_Classification',
+      language: 'Python, scikit-learn, Pandas',
       categories: ['Machine Learning'],
+    },
+
+
+     /* NLP*/
+    {
+      name: 'Reddit Analytical System',
+      description: 'End-to-end NLP system on Reddit data for text classification, sentiment analysis, and topic modeling using ML and transformer models.',
+      url: 'https://github.com/MadhunishaBala/Reddit-Analytical-System',
+      language: 'Python, NLP, Transformers, Spacy',
+      categories: ['NLP'],
+    },
+
+     /*Optimization */
+    {
+      name: 'Optimizing Bus Schedules Using EA',
+      description: 'An intelligent framework that integrates Machine Learning with NSGA-II to optimize Delhi bus schedules, balancing punctuality, reliability, and operational feasibility through Pareto-optimal solutions.',
+      url: 'https://github.com/MadhunishaBala/Optimizing-Public-Bus-Schedules-Using-Multi-Objective-Evolutionary-Algorithms-and-Machine-Learning',
+      language: 'Python, NSGA-II',
+      categories: ['Optimization'],
     },
   ]
 
@@ -93,8 +135,15 @@ export default function Projects() {
   const filteredProjects = activeFilters.length === 0 
     ? featured 
     : featured.filter(project => 
-        project.categories.some(cat => activeFilters.includes(cat))
-      )
+      {project.categories.map(cat => (
+      <span
+      key={cat}
+      className={`text-xs text-white px-2 py-1 rounded-full font-semibold ${CATEGORY_COLORS[cat]}`}
+      >
+        {cat}
+        </span>
+        ))
+      }
 
   // Calculate category counts
   const categoryCounts = CATEGORIES.map(cat => ({
@@ -106,8 +155,8 @@ export default function Projects() {
   const toggleFilter = (category: string) => {
     setActiveFilters(prev => 
       prev.includes(category)
-        ? prev.filter(c => c !== category)
-        : [...prev, category]
+        ? []
+        : [category]
     )
   }
 
@@ -221,7 +270,7 @@ export default function Projects() {
                 </Link>
               ))}
             </div>
-          ) : null} 
+          ) : null}
         </div>
       </div>
     </section>
