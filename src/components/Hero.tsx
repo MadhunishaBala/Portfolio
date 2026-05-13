@@ -7,7 +7,7 @@ export default function Hero() {
             Hi, I'm <span className="text-accent">Madhunisha Balajeyandhan</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-6">
-            Undergraduate in BSc(Hons) Artificial Intelligence and Data Science
+            BSc(Hons) Artificial Intelligence and Data Science
           </p>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
             Transforming data into insights and creating intelligent solutions that solve complex problems.
