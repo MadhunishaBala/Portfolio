@@ -3,7 +3,7 @@ const skills = {
   'Data Analysis': ['Python', 'SQL', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
   'Machine Learning': ['Scikit-learn', 'TensorFlow', 'Keras'],
   'Business Analysis': ['Requirements Gathering', 'Stakeholder Communication','User Stories','Process Mapping'],
-  'Tools & Platforms': ['Visual Studio Code', 'Git', 'Power BI', 'JIRA', 'Confluence']
+  'Tools & Platforms': ['AWS', 'Visual Studio Code', 'Git', 'Power BI', 'JIRA', 'Confluence']
 };
 
   return (

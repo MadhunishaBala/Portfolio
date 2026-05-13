@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://yourportfolio.com',
     title: 'Madhunisha Bala - Portfolio',
-    description: ' Undergraduate in BSc(Hons) Artificial Intelligence and Data Science',
+    description: 'BSc(Hons) Artificial Intelligence and Data Science',
   },
 }
 
