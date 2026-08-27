@@ -1,5 +1,13 @@
 export default function Experience() {
   const experiences = [
+    {
+    title: 'Intern AI & ML Engineer',
+    company: 'D.Samsons and Sons',
+    period: 'June 2026 - Present',
+    description: '',
+    highlights: [
+    ],
+  },
   {
     title: 'Intern Business Analyst',
     company: 'Fcode Labs',
