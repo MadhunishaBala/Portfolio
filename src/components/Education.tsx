@@ -3,7 +3,7 @@
 export default function Education() {
   const education = [
     {
-      degree: 'Bachelor of Science (Honours) in Artificial Intelligence and Data Science',
+      degree: 'Bachelor of Science (Honours) in Artificial Intelligence and Data Science with First Class Honours',
       institution: 'Informatics Institute of Technology affiliated with Robert Gordon University',
       year: 'September 2022 - May 2026',
     },
