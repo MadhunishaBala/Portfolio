@@ -3,8 +3,9 @@
 export default function Education() {
   const education = [
     {
-      degree: 'Bachelor of Science (Honours) in Artificial Intelligence and Data Science with First Class Honours',
+      degree: 'Bachelor of Science (Honours) in Artificial Intelligence and Data Science',
       institution: 'Informatics Institute of Technology affiliated with Robert Gordon University',
+      grade: 'First Class Honours',
       year: 'September 2022 - May 2026',
     },
     {
@@ -36,7 +37,14 @@ export default function Education() {
                 <h3 className="text-2xl font-bold text-white">{edu.degree}</h3>
                 <span className="text-gray-400 text-sm">{edu.year}</span>
               </div>
+
               <p className="text-gray-300">{edu.institution}</p>
+
+              {edu.grade && (
+                <p className="text-accent font-semibold mt-2">
+                  {edu.grade}
+                </p>
+              )}
             </article>
           ))}
         </div>
